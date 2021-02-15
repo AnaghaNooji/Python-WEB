@@ -1,3 +1,5 @@
+#Script to filter last mail from the outlook
+
 import pyperclip 
 import win32com.client,sys
 from datetime import datetime
@@ -38,6 +40,7 @@ ticket_id = id[1]
 
 pyperclip.copy(ticket_id)
 
+#we are getting into the chrome and doing copy paste & stuffs
 driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.maximize_window()
 url="https://www.google.com"
@@ -48,6 +51,8 @@ user_input.click()
 user_input.send_keys(ticket_id)
 
 action=ActionChains(driver)
+
+
 
 click =driver.find_element_by_name('q')
 action.double_click(click).perform()
