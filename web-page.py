@@ -61,3 +61,6 @@ action.key_down(Keys.CONTROL).send_keys("c").perform()
 
 #press enter 
 driver.find_element_by_name("q").send_keys(Keys.ENTER)
+
+#you ,made some changes here
+
