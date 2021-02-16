@@ -46,6 +46,7 @@ driver.maximize_window()
 url="https://www.google.com"
 driver.get(url)
 an = 'aan'
+#inplace of "q" you can give the name that is right in you search bar
 user_input = driver.find_element_by_name('q')
 user_input.click()
 user_input.send_keys(ticket_id)
@@ -54,6 +55,9 @@ action=ActionChains(driver)
 
 
 
-click =driver.find_element_by_name('q')
+click =driver.find_element_by_name('q') 
 action.double_click(click).perform()
 action.key_down(Keys.CONTROL).send_keys("c").perform()
+
+#press enter 
+driver.find_element_by_name("q").send_keys(Keys.ENTER)
