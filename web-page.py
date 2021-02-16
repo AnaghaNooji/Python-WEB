@@ -53,8 +53,8 @@ user_input.send_keys(ticket_id)
 
 action=ActionChains(driver)
 
-
-
+#to understand how select and copy works 
+#ignore these three lines if not necessary
 click =driver.find_element_by_name('q') 
 action.double_click(click).perform()
 action.key_down(Keys.CONTROL).send_keys("c").perform()
