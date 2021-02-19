@@ -1,0 +1,15 @@
+#this is just a dummy project 
+#but felt this works
+#create the bat file 
+#so that you can readily run it all time
+
+cd\
+
+timeout 1
+start " " "C:\osit\etc\vmwaremon\call-setup_vmwaremon4"
+
+timeout 1
+"C:\Users\Name\AppData\Local\Programs\Python\Python39\python.exe" "C:\Users\Location\vmwaremon.py"
+pause
+
+#Change the location accordingly respect to your loc and just run the bat file
